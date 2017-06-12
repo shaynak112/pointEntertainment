@@ -6,27 +6,32 @@
 
                 <div class='col-lg-6'>
 
-                    <h2>Friday Nights at Sound Xchange</h2>
+                <div id='leftEventOne'>
 
-    <p>Friday nights at Sound Xchange are dedicated to both bringing in international talent as well as showcasing the incredible talent we are lucky enough to have in Toronto.</p>
+                    <h3>VS Night at Populus - June 17</h3>
 
-    
-
-<div class="newEventsInfo" id="newEventsInfo1">
-
-                <h2>May 19, Zentrix</h2>
-
-                <div class="newEventsDiv" id="newEvents5">
-                    <a href="https://www.facebook.com/events/162796244250896/" target="_blank">
-                    <img class ="newEventsImg" style='width:80%;' src="futureEvents/event01.jpg"></a>
+                    <div class="newEventsDiv" id="newEvents5">
+                    <a href="https://www.facebook.com/events/349728165430244/" target="_blank">
+                    <img class ="newEventsImg" style='width:80%;' src="home/eventVS.jpg"></a>
                 </div> <!--end of img div-->
 
+                <br/>
 
-                <p>May 19 at Sound Xchange - Zentrix! Many talented DJs also spinning techno/psychedelic sounds. Check the <a href="https://www.facebook.com/events/162796244250896/" target="_blank">Facebook event page.</a></p>
-                <p>Accompanied by the talented Ron Jon, Mythrophan (birthday!), Son Ral, Kachamacha, Ticky Ty, Thien, and TwistedDimension. Deco by Neuromantix.</p>
-                
+                        <div>
+                            <div>Welcome to our VS night! Saturday June 17 at Populus (471 Richmond Street West), doors at 10 PM</div>
+                            <ul style='list-style: none;'>
+                            <li>****Jayforce VS Quim****</li>
+                            <li>***Random Doug VS Thien***</li>
+                            <li>**Brian Moar VS Hunnter**</li>
+                            <li>*Shea VS Mukk*</li>
+                            </ul>
+                            4 decks / 2 mixers
+                            <br/>
+                            <div>Check the <a href="https://www.facebook.com/events/349728165430244/" target="_blank">Facebook event page.</a> ... 
+                            $10 on guestlist ($15 not on GL or after midnight) so make sure you get on the guestlist! Add yourself below.</div>
+                        </div>
 
-            <div class="futureForm">
+                <div class="futureForm">
 
                 <form id="formEvent1" class="form-horizontal" action="" method="post">
 
@@ -39,31 +44,26 @@
                 <div><label class="control-label FormEventClass" for="email1">Email Address</label>
                 <input type="text" class="form-control" name="email1" id="email1"></div>
 
-                <input type="submit" class="btn btn-primary" class="submitEvent" id="submitEvent1" name="submitEvent1" value="Submit"/>
+                <br/>
+
+                <input type="submit" class="btn btn-primary" class="submitEvent" id="submitEvent1" name="submitEvent1" value="Add To Guestlist"/>
 
                 </form> 
 
-                <br/>
-                <br/>
+                </div><!--end form div-->
 
-                <div id='twittershare2'>
+            <div id='twittershare2'>
                 <a
-            href="http://twitter.com/share?text=Zentrix&url=https://www.facebook.com/events/162796244250896/" target="_blank" title="Click to post to Twitter"><img src="twitterShare.png"></a>
+            href="http://twitter.com/share?text=VSNight&url=https://www.facebook.com/events/349728165430244/" target="_blank" title="Click to post to Twitter"><img src="twitterShare.png"></a>
             </div>
 
              <br/>
-              <br/>
+              
 
-                <div class="fb-share-button" data-href="https://www.facebook.com/events/162796244250896/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
+                <div class="fb-share-button" data-href="https://www.facebook.com/events/349728165430244/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
 
-    <br/>
-     <br/>
-            
 
-            </div> 
-
-            
-            <?php
+                 <?php
                 ini_set("SMTP","mail.shaynak112.com");
                 ini_set("smtp_port","25");
                 ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
@@ -74,48 +74,173 @@
 
                 if(isset($_POST['submitEvent1']))
                 {
-                  $subject = "Guestlist for May 19 Zentrix";
+                  $subject = "Guestlist for June 27 VS Night";
                   $glName = $_POST['name1'];
                   $glEmail = $_POST['email1'];
                   $glGuests = $_POST['guests1'];
                   $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . " guests.";
                   mail($to,$subject,$message,$from);
+                  echo "<br/>";
                   echo "Thank you, {$glName}, looking forward to seeing you!";
                 }
             ?>
 
+            </div><!--end event 1 on left side-->
+    
 
-        </div> <!--end of new event 1 div-->
+                <div id='leftEventTwo'>
 
-                </div>
+                    <br/>
+                    <br/>
+
+                    <h3>Vinyl Classic Night - July 15</h3>
+
+                    <div class="newEventsDiv" id="newEvents4">
+                    <a href="https://www.facebook.com/events/1404843436239827/" target="_blank">
+                    <img class ="newEventsImg" style='width:80%;' src="home/eventVinylClassic.jpg"></a>
+                </div> <!--end of img div-->
+
+                <br/>
+
+                        <div>
+                            <div>**** VINYL CLASSICS NIGHT ****</div>
+                            <br/>
+                            <div>Just like the way it used to be - the old days, the timeless tracks of years ago (yes, vocal!), house, techno, and everything in between.</div>
+                            <br/>
+                            <div>With Toronto heroes: Deko-ze, Joee Cons, Peter Zurub, and Ticky Ty</div>
+                            <div>Saturday July 15 at Populus (471 Richmond Street West), doors at 10 PM</div>
+                            <br/>
+                            <div>Come experience a magical night and get lost in the music, rediscovering the gems that packed the dancefloor years ago. NOT a night to be missed.</div>
+                            <div>Facebook event page is <a href="https://www.facebook.com/events/1404843436239827/" target="_blank">HERE.</a> $20 on guestlist, guestlist closes at 12, so add yourself to the guestlist below!</div>
+                        </div>
+
+
+
+
+                <div class="futureForm">
+
+                <form id="formEvent2" class="form-horizontal" action="" method="post">
+
+                <div><label class="control-label formEventClass" for="name2">Name (first and last)</label>
+                <input class="form-control" type="text" name="name2" id="name2"></div>
+
+                <div><label class="control-label formEventClass" for="guests2">Number of Guests</label>
+                <input class="form-control" type="text" name="guests2" id="guests2"></div>
+                
+                <div><label class="control-label FormEventClass" for="email2">Email Address</label>
+                <input type="text" class="form-control" name="email2" id="email2"></div>
+
+                <br/>
+
+                <input type="submit" class="btn btn-primary" class="submitEvent" id="submitEvent2" name="submitEvent2" value="Add To Guestlist"/>
+
+                </form> 
+
+                </div><!--end form div-->
+
+            <div id='twittershare3'>
+                <a
+            href="http://twitter.com/share?text=VinylClassics&url=https://www.facebook.com/events/1404843436239827/" target="_blank" title="Click to post to Twitter"><img src="twitterShare.png"></a>
+            </div>
+
+             <br/>
+              
+
+                <div class="fb-share-button" data-href="https://www.facebook.com/events/1404843436239827/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
+
+
+                 <?php
+                ini_set("SMTP","mail.shaynak112.com");
+                ini_set("smtp_port","25");
+                ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
+
+                $from = "Sender <pointsendgl@shaynak112.com>";
+                $to = "Point <guestlist@shaynak112.com>";
+
+
+                if(isset($_POST['submitEvent2']))
+                {
+                  $subject = "Guestlist for July 15 Vinyl Classics Night";
+                  $glName = $_POST['name2'];
+                  $glEmail = $_POST['email2'];
+                  $glGuests = $_POST['guests2'];
+                  $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . " guests.";
+                  mail($to,$subject,$message,$from);
+                  echo "<br/>";
+                  echo "Thank you, {$glName}, looking forward to seeing you!";
+                }
+            ?>
+
+            </div><!--end event 2 on left side-->
+
+        </div><!--end left side div-->
+
+
+
 
 
                 <div class='col-lg-6'>
 
+                <div id='coyuDiv'>
 
-                    <h2>Comedown Sundays and Therapy Thursdays</h2>
+                    <h3>Coyu at One Loft - June 24</h3>
 
-                    <h3>Comedown Sundays</h3>
+                    <div class="newEventsDiv">
+                    <a href="https://www.facebook.com/events/1126444524128111/" target="_blank">
+                    <img class ="newEventsImg" style='width:80%;' src="home/eventCoyu.jpg"></a>
+                    </div> <!--end of img div-->
 
-                    <p>Comedown Sundays is the after AFTER party. Starting in March, it's a series of events held on Sundays, 11 AM - 5 PM (bar in full services and sometimes hours will vary due to other events in the city, etc.) at Sound Xchange. Artists will feature some of the best talent in the city and will be based on proper musical progression and flow (and there may even be a surprise or two in the future with international guests).</p>
-                    <p>As well, most of the time, cover is $15 BUT .... $10 on guestlist OR $5 if you have a Comfort Zone bracelet.</p>
+                    <div id='CoyuInfo'>
+                        <br/>
+                        <div>Saturday June 24, Coyu at One Loft!</div>
+                        <br/>
+                        <div>Coyu, Christina Cruise, Audio and Chip, and Vaxx</div>
+                        <br/>
+                        <div>Advance tickets available <a href='https://www.eventbrite.ca/e/coyu-x-bnkr-june-24-tickets-35027096990?aff=Shay' target='_blank'> here!!</a>, early birds are only $20, prices will increase closer to the date and, of course, more at the door, so buy your ticket early!</div>
+                        <br/>
+                        <div>Doors at 10 PM, venue is One Loft (292 College Street West). Facebook event page is <a href='https://www.facebook.com/events/1126444524128111/' target='_blank'> here</a> for additional information.</div>
+                        <div>Hosted by <a href='https://www.facebook.com/bnkrevents/' target='_blank'>BNKR</a> with Point Entertainment in full support.</div>
+                        <br/>
+                        <div>Don't miss out, make sure you have added yourself to the guestlist!! You can do so with the form below or contact <a href='https://www.facebook.com/shaynak112' target='_blank'>Shayna</a> or by email at <a href="mailto:shayna@shaynak112.com" target='_blank'>shayna@shaynak112.com</a></div>
+                        <br/>
 
-                    <div id="comedownform">
+                    </div><!--end coyuinfo div-->
 
-            <form id="formComedownGeneral" class="form-horizontal"action="" method="post">
 
-            <div><label class="control-label" for="nameComedown">Name (first and last)</label>
-            <input type="text" class="form-control" name="nameComedown" id="nameComedown"></div>
+                <div class="futureForm">
 
-            <div><label class="control-label" for="guestsComedown">Number of Guests</label>
-            <input type="text" class="form-control" name="guestsComedown" id="guestsComedown"></div>
-            
-            <div><label class="control-label" for="emailComedown">Email Address</label>
-            <input type="text" class="form-control" name="emailComedown" id="emailComedown"></div>
+                <form id="formCoyu" class="form-horizontal" action="" method="post">
 
-            <input type="submit" class="btn btn-primary" id="submitComedown05" name="submitComedown05" value="Submit"/>
+                <div><label class="control-label formEventClass" for="name3">Name (first and last)</label>
+                <input class="form-control" type="text" name="name3" id="name3"></div>
 
-        </form> 
+                <div><label class="control-label formEventClass" for="guests3">Number of Guests</label>
+                <input class="form-control" type="text" name="guests3" id="guests3"></div>
+                
+                <div><label class="control-label FormEventClass" for="email3">Email Address</label>
+                <input type="text" class="form-control" name="email3" id="email3"></div>
+
+                <br/>
+
+                <input type="submit" class="btn btn-primary" class="submitEvent" id="submitCoyu" name="submitCoyu" value="Add To Guestlist"/>
+
+                </form> 
+
+                </div><!--end form div-->
+
+                <div class='socialMediaShare'>
+                    <div class='twitterShare'>
+                    <a
+                href="http://twitter.com/share?text=Coyu&url=https://www.eventbrite.ca/e/coyu-x-bnkr-june-24-tickets-35027096990?aff=Shay" target="_blank" title="Click to post to Twitter"><img src="twitterShare.png"></a>
+                </div>
+
+                 <br/>
+                  
+
+                    <div class="fb-share-button" data-href="https://www.eventbrite.ca/e/coyu-x-bnkr-june-24-tickets-35027096990?aff=Shay" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
+                </div><!--end socialmedia share-->
+
+                   
 
         <?php
 
@@ -125,30 +250,40 @@
             ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
 
             $from = "Sender <pointsendgl@shaynak112.com>";
-            $to = "Point <guestlist@shaynak112.com>";
+            $to = "Point <shayna@shaynak112.com>";
 
             $host = "shaynak112.shaynak112.com";
 
 
-            if(isset($_POST['submitComedown05']))
+            if(isset($_POST['submitCoyu']))
             {
-              $subject = "Guestlist for the next comedown";
-              $glName = $_POST['nameComedown'];
-              $glEmail = $_POST['emailComedown'];
-              $glGuests = $_POST['guestsComedown'];
+              $subject = "Guestlist for Coyu";
+              $glName = $_POST['name3'];
+              $glEmail = $_POST['email3'];
+              $glGuests = $_POST['guests3'];
               $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . "guests.";
               mail($to,$subject,$message,$from);
+              echo "<br/>";
               echo "Thanks, " . $glName;
             } 
             
         ?>
-            </div>
+
+
+            </div> <!--end coyuDiv-->
+
             <br/>
             <br/>
+
+            <div id='thursdayDiv'>
 
             <h3>Therapy Thursdays</h3>
 
-        <p>House and Techno have a new home on Thursdays! Expect bouncy house, techno, tribal... it's all about the music so there will be a unique sound each Thursday! Located at Sound Xchange (421 Dundas Street West, second floor). $5 cover and $5 drinks until 12 AM. Some DJs who regularly spin on Thursday nights include Quim, Manolo, Ticky Ty, Kotsy, and Billey Barry. Add yourself to the next guestlist below:</p>
+        
+        <div>House and Techno have a new home on Thursdays! Expect bouncy house, techno, tribal... it's all about the music so there will be a unique sound each Thursday!</div>
+        <br/>
+        <div>Located at Sound Xchange (421 Dundas Street West, second floor). $5 cover and $5 drinks until 12 AM. Some DJs who regularly spin on Thursday nights include Quim, Manolo, Ticky Ty, Kotsy, Billey Barry, and Thien. Add yourself to the next guestlist below:</div>
+        <br/>
 
 
         <div id="thursdayForm">
@@ -164,37 +299,57 @@
             <div><label class="control-label" for="emailThursday">Email Address</label>
             <input type="text" class="form-control" name="emailThursday" id="emailThursday"></div>
 
-            <input type="submit" class="btn btn-primary" id="submitThursdayGeneral" name="submitThursdayGeneral" value="Submit"/>
+            <br/>
+
+            <input type="submit" class="btn btn-primary" id="submitThursdayGeneral" name="submitThursdayGeneral" value="Add To Guestlistt"/>
 
         </form> 
 
-<?php
+        </div> <!--end Thursday form div-->
 
 
-    ini_set("SMTP","mail.shaynak112.com");
-    ini_set("smtp_port","25");
-    ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
 
-    $from = "Sender <pointsendgl@shaynak112.com>";
-    $to = "Point <guestlist@shaynak112.com>";
+               <!-- <div class='socialMediaShare'>
+                    <div class='twitterShare'>
+                    <a
+                href="http://twitter.com/share?text=Coyu&url=https://www.eventbrite.ca/e/coyu-x-bnkr-june-24-tickets-35027096990?aff=Shay" target="_blank" title="Click to post to Twitter"><img src="twitterShare.png"></a>
+                </div>
 
-    $host = "shaynak112.shaynak112.com";
+                 <br/>
+                  
+
+                    <div class="fb-share-button" data-href="https://www.eventbrite.ca/e/coyu-x-bnkr-june-24-tickets-35027096990?aff=Shay" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
+                </div> end socialmedia share-->
 
 
-    if(isset($_POST['submitThursdayGeneral']))
-    {
-      $subject = "Guestlist for the next Therapy Thursday";
-      $glName = $_POST['nameThursday'];
-      $glEmail = $_POST['emailThursday'];
-      $glGuests = $_POST['guestsThursday'];
-      $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . "guests.";
-      mail($to,$subject,$message,$from);
-      echo "Thanks, " . $glName;
-    } 
+        <?php
+
+
+            ini_set("SMTP","mail.shaynak112.com");
+            ini_set("smtp_port","25");
+            ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
+
+            $from = "Sender <pointsendgl@shaynak112.com>";
+            $to = "Point <guestlist@shaynak112.com>";
+
+            $host = "shaynak112.shaynak112.com";
+
+
+            if(isset($_POST['submitThursdayGeneral']))
+            {
+              $subject = "Guestlist for the next Therapy Thursday";
+              $glName = $_POST['nameThursday'];
+              $glEmail = $_POST['emailThursday'];
+              $glGuests = $_POST['guestsThursday'];
+              $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . "guests.";
+              mail($to,$subject,$message,$from);
+              echo "<br/>";
+              echo "Thanks, " . $glName;
+            } 
+            
+        ?>
     
-?>
-    </div>
-
+        </div><!--end Thursday div-->
 
                 </div>
                 
