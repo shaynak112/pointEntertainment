@@ -1,3 +1,8 @@
+    <?php
+      include 'dbConnect.php';
+      include 'analyticstracking.php';
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,40 +37,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+    <!--<?php
+      //include 'socialMediaScript.php';
+    ?>-->
 
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : 'your-app-id',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -112,6 +93,10 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 
+                    <li>
+                        <a class="page-scroll" href="#subscribe">Subscribe</a>
+                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -146,47 +131,9 @@
    ?>
 
  <?php
-    include ('partners.php');  
+   include ('partners.php');  
    ?>
    
-
-
-           
-
-            
-
-          
-
-
-        <!-- Partners -->
-    <section id="partners" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Partners</h2>
-                <p>Point works with many people, groups, etc. around the city so we wanted to just mentioned a few of those who we often work with. These are listed in no specific order. There are so many amazing people and groups in our community so some may be missed but we wanted to list a few that have really helped us as Point Entertainment.</p>
-
-                <ul style='text-align:left;'>
-                    <li><a href="https://www.facebook.com/soundspectrumto/" target="_blank">Sound Spectrum</a></li>
-
-                    <li><a href="https://www.facebook.com/kotsyphoto/" target="_blank">Christopher Kotsy of Kotsy Photography</a></li>
-
-                    <li><a href="https://www.facebook.com/AcidRP/" target="_blank">Acid Reign Productions</a></li>
-
-                    <li><a href="https://www.facebook.com/BlacklightBeatsTV/" target="_blank">Blacklight Beats TV</a></li>
-
-                    <li><a href="https://www.facebook.com/ShaktiCollective/" target="_blank">Shakti Collective</a></li>
-                    
-                    <li><a href="https://www.facebook.com/derinkuyu.ca/" target="_blank">John Mitchell of Derinkuyu</a></li>
-                    
-                    <li><a href="https://www.facebook.com/architexturescollective/" target="_blank">Architextures</a></li>
-
-                    <li><a href="https://www.facebook.com/OngakuEntertainment/" target="_blank">Ongaku Entertainment</a></li>
-
-
-                </ul>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Basic Template 
@@ -200,13 +147,15 @@
     </section>-->
 
 
-    <!-- Contact Section -->
+    <!-- Contact Section 
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Us!</h2>
                 <p>Feel free to contact us if you have any questions, if you are interested in one of our events, if you're interested in working with us, etc.</p>
+            </div>
 
+<div class="col-lg-8 col-lg-offset-2">
 
 <form name="contactform" class="form-horizontal" method="post" action="">
 
@@ -222,7 +171,12 @@
 
 <div>
 <label class="control-label" for="phone">Your phone: </label>
-  <input id="email" type="text" class="form-control" placeholder="Enter your phone here" name="phone"/>
+  <input id="phone" type="text" class="form-control" placeholder="Enter your phone here" name="phone"/>
+</div>
+
+<div>
+<label class="control-label" for="message">Your message: </label>
+  <input id="message" type="text" class="form-control" placeholder="Please enter your message" name="message"/>
 </div>
 
 
@@ -231,21 +185,25 @@
   <textarea id="message" class="form-control" placeholder="Please enter your message" name="message"></textarea>
 </div>
 
+<br/>
+
   <input type="submit" class="btn btn-primary" value="Submit" name="Submit" id="submit">
 
   </form>
 
-
+</div>
+</div>
   
+-->
 
 <?php
-
+/*
 ini_set("SMTP","mail.shaynak112.com");
 ini_set("smtp_port","25");
 ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
 
-$from = "Sender <pointsendgl@shaynak112.com>";
-$to = "Point <pointcontact@shaynak112.com>";
+$from = "Sender <'pointsendgl@shaynak112.com'>";
+$to = "Point <'pointcontact@shaynak112.com'>";
 $subject = "Point Contact";
 
 $headers = array ('From' => $from, 'To' => $to, 'Subject' => $subject);
@@ -260,17 +218,7 @@ if(isset($_POST['Submit']))
   mail($to,$subject,$message,$from);
   echo "Thank you, " . $contactName;
 }
-/*else
-{
-  $contactName = "nothing";
-  $contactEmail = "nothing";
-  $contactPhone = "nothing";
-  $contactBody = "nothing";
-  $message = "unsuccessful";
-  //mail($to,$subject,$message,$from);
-}*/
-
-
+*/
 ?>
 
 <div>
@@ -279,7 +227,7 @@ if(isset($_POST['Submit']))
 
 <p>Remember to keep up with us through social media! We're on <a href="https://www.facebook.com/pointentertainmenttoronto/" target="_blank">Facebook</a>, <a href="https://twitter.com/dj_thien" target="_blank">Twitter</a>, and <a href="https://www.instagram.com/shaynak112/" target="_blank">Instagram!</a></p>
 
-    
+</div>
 
     
     <div id="socialMedia">
@@ -293,22 +241,122 @@ if(isset($_POST['Submit']))
     </div>  
 
 
-</div>
+
 
     </section>
 
-    
+
+    <!--
+    <section id="subscribe" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Subscribe To Our NewsLetter</h2>
+                <p>We will keep you up to date with the latest events as well as new music releases and chances to win FREE ENTRY for those exclusive on this list.</p>
+            </div>
+        </div>end row
+
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2">
+            <form name="subscribeForm" class="form-horizontal" method="post" action="">
+
+<div>
+<label class="control-label" for="firstName">First name: </label>
+  <input id="firstName" class="form-control" type="text" placeholder="Enter your first name" name="firstName"/>
+</div>
+
+<div>
+<label class="control-label" for="lastName">Last name: </label>
+  <input id="lastName" class="form-control" type="text" placeholder="Enter your last name" name="lastName"/>
+</div>
+
+<div>
+<label class="control-label" for="email">Your email: </label>
+  <input id="email" type="text" class="form-control" placeholder="Enter your email" name="email"/>
+</div>
+
+<div>
+<label class="control-label" for="phone">Your phone: </label>
+  <input id="phone" type="text" class="form-control" placeholder="Enter your phone number (optional)" name="phone"/>
+</div>
+
+<br/>
+
+  <input type="submit" class="btn btn-primary" value="Subscribe to Point's Newsletter" name="subscribePoint" id="subscribePoint"/>
+
+  </form>
+
+
+-->
+
+   
+
+<?php
+/*
+ini_set("SMTP","mail.shaynak112.com");
+ini_set("smtp_port","25");
+ini_set('sendmail_from', 'pointcontact@shaynak112.com');
+
+$from = "Sender <pointcontact@shaynak112.com>";
+$to = "Point <pointsubscribe@shaynak112.com>";
+$subject = "Point Newsletter Subscription";
+
+$headers = array ('From' => $from, 'To' => $to, 'Subject' => $subject);
+
+if(isset($_POST['subscribePoint']))
+{
+  $firstName = $_POST['firstName'];
+  $lastName = $_POST['lastName'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $message = $firstName . " " . $lastName . "at" . $email . " has signed up for the newsletter.";
+  mail($to,$subject,$message,$from);
+
+  $conn = new Dbconnect;
+  $db = $conn->getDb();
+
+  $query = "INSERT INTO subscribe (firstName, lastName, email, phone, subscribe) VALUES (:firstName, :lastName, :email, :phone, 'subscribed')";
+
+    $statement = $db->prepare($query);
+
+      $statement->bindValue(':firstName', $firstName, PDO::PARAM_STR);
+      $statement->bindValue(':lastName', $lastName, PDO::PARAM_STR);
+      $statement->bindValue(':email', $email, PDO::PARAM_STR);
+      $statement->bindValue(':phone', $phone, PDO::PARAM_STR);
+
+      $statement->execute();
+
+      echo "<div>";
+
+      echo "Thank you, {$firstName}, for joining our newsletter.";
+      echo "</div>";
+
+}
+
+*/
+
+
+?>
+
+<!--</div>-->
+</div>
+     
+    </section>
+
+
+
+
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; Point Entertainment Toronto, 2017</p>
-            <p>Email: <a href='pointcontact@shaynak112.com?Subject=From%Point%Website' target="_top">pointcontact@shaynak112.com</a></p>
+            <!--<p>Email: <a href='pointcontact@shaynak112.com?Subject=From%Point%Website' target="_top">pointcontact@shaynak112.com</a></p>-->
         </div>
+
     </footer>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+ <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -323,6 +371,7 @@ if(isset($_POST['Submit']))
     <!-- Extra JavaScript -->
     <script type='text/javascript' src="gallery/script.js"></script>
     <script type='text/javascript' src="djs/script.js"></script>
+  
 
 </body>
 
