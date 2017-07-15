@@ -6,14 +6,14 @@
 
                 <div class='col-lg-6'>
 
-                <div id='leftEventOne'>
+                <div id='leftEventOne' >
 
-                    <h3>VS Night at Populus - June 17</h3>
+                   <!-- <h3>VS Night at Populus - June 17</h3>
 
                     <div class="newEventsDiv" id="newEvents5">
                     <a href="https://www.facebook.com/events/349728165430244/" target="_blank">
                     <img class ="newEventsImg" style='width:80%;' src="home/eventVS.jpg"></a>
-                </div> <!--end of img div-->
+                </div> end of img div
 
                 <br/>
 
@@ -50,7 +50,7 @@
 
                 </form> 
 
-                </div><!--end form div-->
+                </div>end form div
 
             <div id='twittershare2'>
                 <a
@@ -63,7 +63,7 @@
                 <div class="fb-share-button" data-href="https://www.facebook.com/events/349728165430244/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
 
 
-                 <?php
+                 <?php/*
                 ini_set("SMTP","mail.shaynak112.com");
                 ini_set("smtp_port","25");
                 ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
@@ -82,10 +82,20 @@
                   mail($to,$subject,$message,$from);
                   echo "<br/>";
                   echo "Thank you, {$glName}, looking forward to seeing you!";
-                }
+
+                $dbconn = new Dbconnect;
+                $db = $dbconn->getDb();
+                $query = "INSERT INTO guestlist (eventID, promoter, guestName, plus, email) VALUES(28, 'PET', :glName, :glGuests, :glEmail)";
+                $statement = $db->prepare($query);
+                $statement->bindValue(':glName', $glName, PDO::PARAM_STR);
+                $statement->bindValue(':glGuests', $glGuests, PDO::PARAM_INT);
+                $statement->bindValue(':glEmail', $glEmail, PDO::PARAM_STR);
+                $statement->execute();
+
+                }*/
             ?>
 
-            </div><!--end event 1 on left side-->
+            </div>end event 1 on left side-->
     
 
                 <div id='leftEventTwo'>
@@ -150,12 +160,12 @@
 
 
                  <?php
-                ini_set("SMTP","mail.shaynak112.com");
-                ini_set("smtp_port","25");
-                ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
+                #ini_set("SMTP","mail.shaynak112.com");
+                #ini_set("smtp_port","25");
+                #ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
 
-                $from = "Sender <pointsendgl@shaynak112.com>";
-                $to = "Point <guestlist@shaynak112.com>";
+                #$from = "Sender <pointsendgl@shaynak112.com>";
+                #$to = "Point <guestlist@shaynak112.com>";
 
 
                 if(isset($_POST['submitEvent2']))
@@ -165,15 +175,25 @@
                   $glEmail = $_POST['email2'];
                   $glGuests = $_POST['guests2'];
                   $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . " guests.";
-                  mail($to,$subject,$message,$from);
-                  echo "<br/>";
-                  echo "Thank you, {$glName}, looking forward to seeing you!";
+                  #mail($to,$subject,$message,$from);
+                  #echo "<br/>";
+                  #echo "Thank you, {$glName}, looking forward to seeing you!";
+
+                $dbconn1 = new Dbconnect;
+                $db1 = $dbconn1->getDb();
+                $query1 = "INSERT INTO guestlist (eventID, promoter, guestName, plus, email) VALUES(30, 'PET', :glName, :glGuests, :glEmail)";
+                $statement1 = $db1->prepare($query1);
+                $statement1->bindValue(':glName', $glName, PDO::PARAM_STR);
+                $statement1->bindValue(':glGuests', $glGuests, PDO::PARAM_INT);
+                $statement1->bindValue(':glEmail', $glEmail, PDO::PARAM_STR);
+                $statement1->execute();
                 }
             ?>
 
             </div><!--end event 2 on left side-->
 
         </div><!--end left side div-->
+        </div>
 
 
 
@@ -181,14 +201,14 @@
 
                 <div class='col-lg-6'>
 
-                <div id='coyuDiv'>
+                <!--<div id='coyuDiv'>
 
                     <h3>Coyu at One Loft - June 24</h3>
 
                     <div class="newEventsDiv">
                     <a href="https://www.facebook.com/events/1126444524128111/" target="_blank">
                     <img class ="newEventsImg" style='width:80%;' src="home/eventCoyu.jpg"></a>
-                    </div> <!--end of img div-->
+                    </div> end of img div
 
                     <div id='CoyuInfo'>
                         <br/>
@@ -204,7 +224,7 @@
                         <div>Don't miss out, make sure you have added yourself to the guestlist!! You can do so with the form below or contact <a href='https://www.facebook.com/shaynak112' target='_blank'>Shayna</a> or by email at <a href="mailto:shayna@shaynak112.com" target='_blank'>shayna@shaynak112.com</a></div>
                         <br/>
 
-                    </div><!--end coyuinfo div-->
+                    </div>end coyuinfo div
 
 
                 <div class="futureForm">
@@ -226,7 +246,7 @@
 
                 </form> 
 
-                </div><!--end form div-->
+                </div>end form div
 
                 <div class='socialMediaShare'>
                     <div class='twitterShare'>
@@ -238,12 +258,12 @@
                   
 
                     <div class="fb-share-button" data-href="https://www.eventbrite.ca/e/coyu-x-bnkr-june-24-tickets-35027096990?aff=Shay" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fevents%2F162796244250896%2F&amp;src=sdkpreparse">Share Event</a></div>
-                </div><!--end socialmedia share-->
+                </div>end socialmedia share
 
                    
 
         <?php
-
+        /*
 
             ini_set("SMTP","mail.shaynak112.com");
             ini_set("smtp_port","25");
@@ -265,17 +285,26 @@
               mail($to,$subject,$message,$from);
               echo "<br/>";
               echo "Thanks, " . $glName;
-            } 
+            } */
             
         ?>
 
 
-            </div> <!--end coyuDiv-->
+            </div> end coyuDiv-->
 
             <br/>
             <br/>
 
             <div id='thursdayDiv'>
+
+            <h3>Supporting Events</h3>
+            <div>
+
+            <a href='https://www.facebook.com/events/236287733548875/'><img src='previousEvents/aug7EINina.jpg' target="_blank" style='width:80%;margin-left:10%;'/></a>
+
+            <p>Point Entertainment is fully supporting Electric Island's Civic Day Event with Nina Kraviz, Kink, and many more. Check with <a href='https://www.facebook.com/alexandra.esposito.12' target="_blank">Lexy</a> to see if she has any hard tickets available.</p>
+
+            </div>
 
             <h3>Therapy Thursdays</h3>
 
@@ -325,14 +354,14 @@
         <?php
 
 
-            ini_set("SMTP","mail.shaynak112.com");
-            ini_set("smtp_port","25");
-            ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
+            #ini_set("SMTP","mail.shaynak112.com");
+            #ini_set("smtp_port","25");
+            #ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
 
-            $from = "Sender <pointsendgl@shaynak112.com>";
-            $to = "Point <guestlist@shaynak112.com>";
+            #$from = "Sender <pointsendgl@shaynak112.com>";
+            #$to = "Point <guestlist@shaynak112.com>";
 
-            $host = "shaynak112.shaynak112.com";
+            #$host = "shaynak112.shaynak112.com";
 
 
             if(isset($_POST['submitThursdayGeneral']))
@@ -342,9 +371,9 @@
               $glEmail = $_POST['emailThursday'];
               $glGuests = $_POST['guestsThursday'];
               $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . "guests.";
-              mail($to,$subject,$message,$from);
-              echo "<br/>";
-              echo "Thanks, " . $glName;
+              #mail($to,$subject,$message,$from);
+              #echo "<br/>";
+              #echo "Thanks, " . $glName;
             } 
             
         ?>
