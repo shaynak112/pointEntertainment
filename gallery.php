@@ -202,6 +202,8 @@
  <h3>Other Galleries</h3>
         <ul style="list-style:none;">
 
+        <li><a href='https://www.facebook.com/pg/itsonlykotsy/photos/?tab=album&album_id=1437796602973262' target="_blank">Vinyl Classic Night</a></li>
+
         <li><a href="https://www.facebook.com/pg/itsonlykotsy/photos/?tab=album&album_id=1375099065909683" target="_blank">Psy Sessions</a></li>
 
         <li><a href="https://www.facebook.com/pg/itsonlykotsy/photos/?tab=album&album_id=1343575175728739" target="_blank">Innerdance IV with Cubixx/Mindbenderz</a></li>

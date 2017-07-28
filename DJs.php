@@ -8,11 +8,14 @@
 
             <div class="row">
             <div class='col-lg-12'>
-            <div class="col-lg-3">
+
+</a>
+           <div class="col-lg-3">
             <h3 class="aboutH2">Deko-ze</h3>
             <img src="djs/dekoze.jpg" class="aboutImage" />
             <p class="DJinfo" id="aboutDekoze">Deko-ze is the co-owner of Jungle Funk Recordings with Jerome Robins. He has released tracks on Jungle Funk, Hotfingers, Deported, and more. He is a regular at Comfort Zone, Coda, Fly, Pitbull, and Prism events. He has toured to Germany, Mexico, Taiwan, and more. Keep up with Deko-ze on <a href="https://www.facebook.com/Dekoze1/" target="_blank"> Facebook</a> and <a href="https://soundcloud.com/deko-ze" target="_blank">Soundcloud</a>.</p>
             </div>
+
 
            <div class="col-lg-3">
             <h3 class="aboutH2">Jayforce</h3>
