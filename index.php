@@ -147,7 +147,7 @@
     </section>-->
 
 
-    <!-- Contact Section 
+    <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -180,12 +180,6 @@
 </div>
 
 
-<label class="control-label" for="message">Your message: </label></div>
-<div>
-  <textarea id="message" class="form-control" placeholder="Please enter your message" name="message"></textarea>
-</div>
-
-<br/>
 
   <input type="submit" class="btn btn-primary" value="Submit" name="Submit" id="submit">
 
@@ -194,16 +188,16 @@
 </div>
 </div>
   
--->
+
 
 <?php
-/*
-ini_set("SMTP","mail.shaynak112.com");
-ini_set("smtp_port","25");
-ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
 
-$from = "Sender <'pointsendgl@shaynak112.com'>";
-$to = "Point <'pointcontact@shaynak112.com'>";
+ini_set("SMTP","mail.voxwebtech.com");
+ini_set("smtp_port","25");
+ini_set('sendmail_from', 'testPoint@voxwebtech.com');
+
+$from = "Sender <'testPoint@voxwebtech.com'>";
+$to = "Point <'contactPoint@voxwebtech.com'>";
 $subject = "Point Contact";
 
 $headers = array ('From' => $from, 'To' => $to, 'Subject' => $subject);
@@ -216,16 +210,16 @@ if(isset($_POST['Submit']))
   $contactBody = $_POST['message'];
   $message = "A message from " . $contactName . " at " . $contactEmail . " and " . $contactPhone . " The message is:     " . $contactBody;
   mail($to,$subject,$message,$from);
-  echo "Thank you, " . $contactName;
+  //echo "Thank you, " . $contactName;
 }
-*/
+
 ?>
 
 <div>
 
 <br/>
 
-<p>Remember to keep up with us through social media! We're on <a href="https://www.facebook.com/pointentertainmenttoronto/" target="_blank">Facebook</a>, <a href="https://twitter.com/dj_thien" target="_blank">Twitter</a>, and <a href="https://www.instagram.com/shaynak112/" target="_blank">Instagram!</a></p>
+<p>Remember to keep up with us through social media! We're on <a href="https://www.facebook.com/pointentertainmenttoronto/" target="_blank">Facebook</a>, <a href="https://twitter.com/pointEntTO" target="_blank">Twitter</a>, and <a href="https://www.instagram.com/pointentto/" target="_blank">Instagram!</a></p>
 
 </div>
 
@@ -234,8 +228,8 @@ if(isset($_POST['Submit']))
 
       <ul id="socialLinks">
         <li><a href="https://www.facebook.com/pointentertainmenttoronto/ " target="_blank"><img src="contactUs/fb.jpg" id="facebook" class="social" alt="facebook link" title="facebook link"></a></li>
-        <li><a href="https://twitter.com/dj_thien" target="_blank"><img src="contactUs/twitter.jpg" id="twitter" class="social" alt="twitter link" title="twitter link"></a></li>
-        <li><a href="https://www.instagram.com/shaynak112/" target="_blank"><img src="contactUs/instagram.png" id="instagram" class="social" alt="instagram link" title="instagram link"></a></li>
+        <li><a href="https://twitter.com/pointEntTO" target="_blank"><img src="contactUs/twitter.jpg" id="twitter" class="social" alt="twitter link" title="twitter link"></a></li>
+        <li><a href="https://www.instagram.com/pointentto/" target="_blank"><img src="contactUs/instagram.png" id="instagram" class="social" alt="instagram link" title="instagram link"></a></li>
       </ul>
 
     </div>  
@@ -246,14 +240,14 @@ if(isset($_POST['Submit']))
     </section>
 
 
-    <!--
+  
     <section id="subscribe" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Subscribe To Our NewsLetter</h2>
                 <p>We will keep you up to date with the latest events as well as new music releases and chances to win FREE ENTRY for those exclusive on this list.</p>
             </div>
-        </div>end row
+        </div>
 
 <div class="row">
 <div class="col-lg-8 col-lg-offset-2">
@@ -286,21 +280,11 @@ if(isset($_POST['Submit']))
   </form>
 
 
--->
+
 
    
 
 <?php
-/*
-ini_set("SMTP","mail.shaynak112.com");
-ini_set("smtp_port","25");
-ini_set('sendmail_from', 'pointcontact@shaynak112.com');
-
-$from = "Sender <pointcontact@shaynak112.com>";
-$to = "Point <pointsubscribe@shaynak112.com>";
-$subject = "Point Newsletter Subscription";
-
-$headers = array ('From' => $from, 'To' => $to, 'Subject' => $subject);
 
 if(isset($_POST['subscribePoint']))
 {
@@ -308,8 +292,6 @@ if(isset($_POST['subscribePoint']))
   $lastName = $_POST['lastName'];
   $email = $_POST['email'];
   $phone = $_POST['phone'];
-  $message = $firstName . " " . $lastName . "at" . $email . " has signed up for the newsletter.";
-  mail($to,$subject,$message,$from);
 
   $conn = new Dbconnect;
   $db = $conn->getDb();
@@ -332,12 +314,12 @@ if(isset($_POST['subscribePoint']))
 
 }
 
-*/
+
 
 
 ?>
 
-<!--</div>-->
+</div>
 </div>
      
     </section>
