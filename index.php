@@ -90,6 +90,10 @@
                     </li>
 
                     <li>
+                        <a class="page-scroll" href="#otherEvents">Other Events</a>
+                    </li>
+
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
 
@@ -132,6 +136,10 @@
 
  <?php
    include ('partners.php');  
+   ?>
+
+    <?php
+   include ('otherEvents.php');  
    ?>
    
 
