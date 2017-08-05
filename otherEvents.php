@@ -10,7 +10,7 @@
 
             $dbconn = new Dbconnect;
             $db = $dbconn->getDb();
-            $query = "SELECT * FROM otherEvents ORDER BY date ASC";
+            $query = "SELECT * FROM otherEvents WHERE status='upcoming' ORDER BY date ASC ";
             $statement = $db->prepare($query);
             $statement->execute();
             $otherEvents = $statement->fetchAll(PDO::FETCH_OBJ);
@@ -18,21 +18,22 @@
         ?>
 
 
-                <ul style="list-style:none;">
+
 
                 <?php
 
                     foreach($otherEvents as $p)
                     {
-                        echo "<li>";
-                        echo "<a href='" . $p->facebookURL . "' target='_blank'>" . $p->eventName . "</a>" . " on " . $p->date . " at " . $p->venue . ". Cover: " . $p->cover . " featuring DJs " . $p->DJs . "<br/>";
-                        echo "</li>";
+
+                        echo "<h4 style='margin-bottom:0px;'>" . $p->eventName . "</h4>";
+                        echo "<div><a href='" . $p->facebookURL . "'>More Info</a></div>";
+                        echo "<div>Date: " . $p->date . " at " . $p->venue . "</div>";
+                        echo "<div>Cover: " . $p->cover . " featuring DJs: " . $p->DJs . "</div>";
+                        echo "<br/>";
+                        echo "<br/>";
                     }
 
                 ?>
-
-                </ul>
-
 
 
             </div>
