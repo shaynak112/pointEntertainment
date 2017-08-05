@@ -186,10 +186,9 @@
 <label class="control-label" for="message">Your message: </label>
   <input id="message" type="text" class="form-control" placeholder="Please enter your message" name="message"/>
 </div>
+<br/>
 
-
-
-  <input type="submit" class="btn btn-primary" value="Submit" name="Submit" id="submit">
+  <input type="submit" class="btn btn-primary" value="Submit" name="Submit" id="Submit">
 
   </form>
 
@@ -208,7 +207,7 @@ $from = "Sender <'testPoint@voxwebtech.com'>";
 $to = "Point <'contactPoint@voxwebtech.com'>";
 $subject = "Point Contact";
 
-$headers = array ('From' => $from, 'To' => $to, 'Subject' => $subject);
+$headers = array ('From' => $from, 'To' => $to, 'Subject' => $subject); /*headers or header*/
 
 if(isset($_POST['Submit']))
 {
@@ -218,7 +217,7 @@ if(isset($_POST['Submit']))
   $contactBody = $_POST['message'];
   $message = "A message from " . $contactName . " at " . $contactEmail . " and " . $contactPhone . " The message is:     " . $contactBody;
   mail($to,$subject,$message,$from);
-  //echo "Thank you, " . $contactName;
+  echo "Thank you, " . $contactName;
 }
 
 ?>
@@ -296,6 +295,9 @@ if(isset($_POST['Submit']))
 
 if(isset($_POST['subscribePoint']))
 {
+
+  /*if email is already in there*/
+
   $firstName = $_POST['firstName'];
   $lastName = $_POST['lastName'];
   $email = $_POST['email'];
@@ -329,6 +331,84 @@ if(isset($_POST['subscribePoint']))
 
 </div>
 </div>
+
+
+
+<br/>
+<br/>
+
+<h4>Unsubscribe</h4>
+
+<p>If you would no longer like to be part of the mailing list, please enter your email here and you will be removed.</p>
+
+<div class="row">
+<div class="col-lg-6 col-lg-offset-3">
+    <form name="unSubscribe" class="form-horizontal" method="post" action="">
+
+<div>
+<label class="control-label" for="email">Email: </label>
+  <input id="email" type="text" class="form-control" placeholder="Enter your email" name="email"/>
+</div>
+
+<br/>
+
+  <input type="submit" class="btn btn-primary" value="Unsubscribe" name="unsubscribePoint" id="unsubscribePoint"/>
+
+
+</form>
+
+
+
+
+
+<?php
+
+if(isset($_POST['unsubscribePoint']))
+{
+
+  /*should have an alert or confirmation, maybe JS alert popup*/
+  /*could send an email confirming that the email has been removed*/
+  /*today's date*/
+
+  $email = $_POST['email'];
+
+  $conn = new Dbconnect;
+  $db = $conn->getDb();
+
+  //$today = date("yyyy-mm-dd hh:mm:ss");
+  //echo $today;
+  
+
+  $query = "UPDATE subscribe SET subscribe='unsubscribed' WHERE email='$email'";
+
+  //$query = "DELETE FROM subscribe WHERE email = $email";
+
+    $statement = $db->prepare($query);
+
+      $statement->bindValue(':email', $email, PDO::PARAM_STR);
+      //$statement->bindValue(':today', $today, PDO::PARAM_STR);
+
+      $statement->execute();
+
+      echo "<div>";
+
+      
+      //yyy-mm-dd hh:mm:ss
+      //subscribe = unsubscribed
+
+      echo "You have been removed from the list. If this was done in error, please contact re-add yourself to the list.";
+      echo "</div>";
+
+}
+
+
+
+
+?>
+
+</div>
+</div>
+
      
     </section>
 
