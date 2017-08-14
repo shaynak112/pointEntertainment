@@ -44,7 +44,7 @@
                     <div class='row'>
                     <div class="col-lg-12">
                         <div class="col-lg-4" style='margin-top:15px;'>
-                        <?php echo "<a class='previousFlyers' target='_blank' href='" . $g->facebookURL . "'> <img class='previousFlyers' src='eventViewerImg.php?id=" . $g->id . "'>";
+                        <?php echo "<a class='previousFlyers' target='_blank' href='" . $g->facebookURL . "'> <img class='previousFlyers' src='eventViewerImg.php?id=" . $g->id . "'></a>";
                         ?>
                         </div>
                         <?php
