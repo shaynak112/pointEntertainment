@@ -139,8 +139,7 @@
         ?>
 
 
-            </div> end coyuDiv-->
-
+            </div> end coyuDiv
             <br/>
             <br/>
 
@@ -153,7 +152,7 @@
 
             <p>Point Entertainment is fully supporting Electric Island's Civic Day Event with Nina Kraviz, Kink, and many more. Check with <a href='https://www.facebook.com/alexandra.esposito.12' target="_blank">Lexy</a> to see if she has any hard tickets available.</p>
 
-            </div>
+            </div>-->
 
             
 
@@ -173,34 +172,6 @@
                 </div> end socialmedia share-->
 
 
-        <?php
-
-
-            #ini_set("SMTP","mail.shaynak112.com");
-            #ini_set("smtp_port","25");
-            #ini_set('sendmail_from', 'pointsendgl@shaynak112.com');
-
-            #$from = "Sender <pointsendgl@shaynak112.com>";
-            #$to = "Point <guestlist@shaynak112.com>";
-
-            #$host = "shaynak112.shaynak112.com";
-
-
-            if(isset($_POST['submitThursdayGeneral']))
-            {
-              $subject = "Guestlist for the next Therapy Thursday";
-              $glName = $_POST['nameThursday'];
-              $glEmail = $_POST['emailThursday'];
-              $glGuests = $_POST['guestsThursday'];
-              $message = $glName . " at " . $glEmail . " would like to be added to the guestlist with " . $glGuests . "guests.";
-              #mail($to,$subject,$message,$from);
-              #echo "<br/>";
-              #echo "Thanks, " . $glName;
-            } 
-            
-        ?>
-    
-        </div><!--end Thursday div-->
 
                 </div>
                 

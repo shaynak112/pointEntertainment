@@ -17,7 +17,7 @@
     <title>Point Entertainment Toronto</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,10 +25,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="style/grayscale.min.css" rel="stylesheet" type="text/css">
 
     <!-- Extra CSS -->
-    <link href="pointStyle.css" rel="stylesheet">
+    <link href="style/pointStyle.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -200,21 +200,21 @@
     </footer>
 
     <!-- jQuery -->
- <script src="vendor/jquery/jquery.js"></script>
+ <script src="scripts/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 
     <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="scripts/grayscale.min.js"></script>
 
     <!-- Extra JavaScript -->
-    <script type='text/javascript' src="gallery/script.js"></script>
-    <script type='text/javascript' src="djs/script.js"></script>
+    <script type='text/javascript' src="scripts/script.js"></script>
+    
   
 
 </body>
