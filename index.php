@@ -174,7 +174,7 @@
 
 <div class="col-lg-8 col-lg-offset-2">
 
-<p>Social media is the best way to get in contact with someone from Point Entertainment Toronto. You can also email <a href='mailto:'contactPoint@voxwebtech.com?Subject=Point%Contact">contactPoint@voxwebtech.com</a> or <a href='mailto:'shayna@shaynak112.com?Subject=Point%Contact">shayna@shaynak112.com</a>.</p>
+<p>Social media is the best way to get in contact with someone from Point Entertainment Toronto. You can also email <a href='mailto:'shayna@shaynak112.com?Subject=Point%Contact">shayna@shaynak112.com</a>.</p>
 
 </div>
 </div>
