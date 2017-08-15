@@ -50,6 +50,28 @@
 
                 <div class='col-lg-6'>
 
+                <br/>
+                    <br/>
+
+                    <h2>More Events Coming Up...</h2>
+
+                    <br/>
+                    <div style='text-align:center;'>Be prepared....</div>
+                    <br/>
+
+                    <p>Keep an eye out on this page and our social media pages. You can also <a href='#subscribe'>subscribe</a> to Point's newsletter.</p>
+
+
+                 <div id="socialMedia">
+
+      <ul id="socialLinks">
+        <li><a href="https://www.facebook.com/pointentertainmenttoronto/ " target="_blank"><img src="contactUs/fb.jpg" id="facebook" class="social" alt="facebook link" title="facebook link"></a></li>
+        <li><a href="https://twitter.com/pointEntTO" target="_blank"><img src="contactUs/twitter.jpg" id="twitter" class="social" alt="twitter link" title="twitter link"></a></li>
+        <li><a href="https://www.instagram.com/pointentto/" target="_blank"><img src="contactUs/instagram.png" id="instagram" class="social" alt="instagram link" title="instagram link"></a></li>
+      </ul>
+
+    </div>  
+
                 <!--<div id='coyuDiv'>
 
                     <h3>Coyu at One Loft - June 24</h3>
