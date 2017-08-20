@@ -94,6 +94,11 @@
                     </li>
 
                     <li>
+                        <a class="page-scroll" href="#socialMedia">Social Media</a>
+                    </li>
+
+
+                    <li>
                         <a class="page-scroll" href="#subscribe">Subscribe</a>
                     </li>
 
@@ -142,6 +147,10 @@
 
     <?php
    include ('otherEvents.php');  
+   ?>
+
+     <?php
+   include ('socialMedia.php');  
    ?>
 
   <?php
