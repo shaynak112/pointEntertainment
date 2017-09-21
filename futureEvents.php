@@ -2,18 +2,14 @@
     <section id="futureEvents" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Future Events</h2>
+             
+             <!--if no future events-->
 
-                <p>Unfortunately no upcoming events scheduled as of now. Check back every few days as we update as much as possible!</p>
+             <?php
 
-                <p>If you have any suggestions, feel free to <a class="page-scroll" href="#contact">contact us</a> with any ideas!</p>
+             include 'noFutureEvents.php';
 
-                <p>Definitely check out Point's suggested <a class="page-scroll" href="#otherEvents">other events</a> in the meantime!</p>
-
-
-
-
-                <a href="https://twitter.com/pointentto" class="twitter-follow-button" data-show-count="false">Follow @pointentto</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+             ?>
 
 
 <!--for next event
