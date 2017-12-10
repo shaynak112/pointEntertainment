@@ -81,17 +81,17 @@
                         <a class="page-scroll" href="#djs">DJs</a>
                     </li>
 
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#venues">Venues</a>
-                    </li>
+                    </li>-->
 
                      <li>
                         <a class="page-scroll" href="#partners">Partners</a>
                     </li>
 
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#otherEvents">Other Events</a>
-                    </li>
+                    </li>-->
 
                     <li>
                         <a class="page-scroll" href="#socialMedia">Social Media</a>
@@ -137,17 +137,15 @@
     include ('DJs.php');  
    ?>
 
-    <?php
-    include ('venues.php');  
-   ?>
+   
 
  <?php
    include ('partners.php');  
    ?>
 
-    <?php
-   include ('otherEvents.php');  
-   ?>
+    <!--<?php
+   //include ('otherEvents.php');  
+   ?>-->
 
      <?php
    include ('socialMedia.php');  
