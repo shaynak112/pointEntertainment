@@ -1,18 +1,18 @@
 <section id="about" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
-          
+         
           <span class="section-divider"></span>
 
         </div>
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <h2>Previous Events</h2>
+                       <h2>About Us</h2>
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">
-            <h2>Images</h2>
+            <h2>Events</h2>
             <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
