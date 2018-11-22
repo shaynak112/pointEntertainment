@@ -1,4 +1,4 @@
-<section id="about" class="section-bg">
+<section id="previousEvents" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
           
@@ -7,28 +7,42 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6 about-img wow fadeInLeft">
-            <h2>Previous Events</h2>
+
+
+          <div class="col-lg-4 content wow fadeInRight">
+
+            <p>
+              <img src='flyers/2017-03-31.jpg' style='width:70%;margin-left:15%;'>
+            </p>
+
           </div>
 
-          <div class="col-lg-6 content wow fadeInRight">
-            <h2>Images</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+
+
+          <div class="col-lg-4 about-img wow fadeInLeft text-center">
+            <h2>Previous Events</h2>
 
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li>Agent Orange</li>
+              <li>Mladen Tomic</li>
+              <li>DurtySoxxx</li>
+              <li>Nick Bertossi</li>
+              <li>Nic&Peter</li>
+              <li>All Vinyl</li>
+              <li>Silent Party</li>
             </ul>
+          </div>
+
+          <div class="col-lg-4 content wow fadeInRight">
 
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
+              <img src='flyers/2015-01-16.jpg' style='width:70%;margin-left:15%;'>
             </p>
+
           </div>
+
+
         </div>
 
       </div>
-    </section><!-- #about -->
+    </section>

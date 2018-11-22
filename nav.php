@@ -10,14 +10,14 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#upcoming">Events</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#aboutEvents">Events</a></li>
+          <li><a href="#aboutEvents">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#previous">Previous Events</a></li>
-          <li><a href="#social">Social Media</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#subscribe">Subscribe</a></li>
+          <li><a href="#previousEvents">Previous Events</a></li>
+          <li><a href="#socialMedia">Social Media</a></li>
+          <!--<li><a href="#detailsContactSubscribe">Details</a></li>-->
+          <li><a href="#detailsContactSubscribe">Contact</a></li>
+          <li><a href="#detailsContactSubscribe">Subscribe</a></li>
           <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>

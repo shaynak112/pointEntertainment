@@ -1,33 +1,92 @@
-<section id="about" class="section-bg">
+<section id="aboutEvents" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
          
-          <span class="section-divider"></span>
 
         </div>
 
         <div class="row">
-          <div class="col-lg-6 about-img wow fadeInLeft">
+
+          <div class="col-lg-2 about-img wow fadeInLeft">
+          </div>
+
+          <div class="col-lg-3 about-img wow fadeInLeft">
                        <h2>About Us</h2>
+                       <span class="section-divider"></span>
+
+                       <p>Love of music. Putting on events with the best in Toronto's scene.</p>
+
+                       <ul>
+                        <li>techno</li>
+                        <li>tech-house</li>
+                        <li>tribal</li>
+                        <li>deep house</li>
+                        <li>psytrance</li>
+                       </ul>
+
+                       <p>Events featuring local DJs as well as international DJs since 2014.</p>
+
+                       <p>International DJs such as Mladen Tomic, Nick Bertossi, Agent Orange, and more</p>
+
+                       <p>Local DJs such as Flipside, Deko-ze, Jayforce, Joee Cons, Quim, Ticky Ty, El Duran, Random Doug, Peter Zurub, Miz Megs</p>
+
+                       <p>Working with others in the local scene such as Sound Xchange, Quim, Dekoze, Aluna, Mentis, DBR, Dragon's Fire, Bunker, Gaia</p>
+
+                       <p>Hosted events at Fly, Bunker, Club 120, Sound Xchange, Populus (previously Toika), Li'ly Lounge</p>
           </div>
 
-          <div class="col-lg-6 content wow fadeInRight">
-            <h2>Events</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+          <div class="col-lg-7 content wow fadeInRight">
+            <h2>Previous Events</h2>
+            <span class="section-divider"></span>
 
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
 
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
-            </p>
+            <?php
+
+
+    
+
+
+
+  $conn = new Dbconnect;
+  $db = $conn->getDb();
+
+  $query = "SELECT * FROM events ORDER BY eventDate DESC LIMIT 2";
+
+  $statement = $db->prepare($query);
+            $statement->execute();
+            $allEvents = $statement->fetchAll(PDO::FETCH_OBJ);
+
+
+
+                    foreach($allEvents as $p)
+                    {
+
+                        echo "<h4 style='margin-bottom:0px;'>" . $p->eventName . "</h4>";
+                        echo "<div><a href='" . $p->eventFacebook . "'>More Info</a></div>";
+                        echo "<div>Date: " . $p->eventDate . " at " . $p->eventVenue . "</div>";
+                        echo "<div><img src='" . $p->eventImage . "' style='width:50%;'></div>";
+                        echo "<br/>";
+                        echo "<br/>";
+                    }
+
+
+        
+
+        
+
+?>
+
+
+
+
           </div>
+
+          <div class="col-lg-2 about-img wow fadeInLeft">
+          </div>
+
+
+
+
         </div>
 
       </div>
